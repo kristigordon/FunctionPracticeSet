@@ -1,8 +1,6 @@
-# FunctionPracticeSet
+from this import d
 
-Practicing Functions with default parameters.
 
-```
 def even_calc(number):
     if number % 2 == 0:
         return True
@@ -52,4 +50,20 @@ def greet(person, msg="hi")
     print(f"{msg}, {person}!!!")
 greet("Jace")
 #You can still call them in whatever order you would like, but they just have to be initially set up this way.
-```
+
+ def get_total(price, qty=1, tax=0.02, discount=0):
+    subtotal = price * qty * (1-discount)
+    print(subtotal * (1 + tax))
+
+get_total(9.75, 5, 0.01, 0.5)
+get_total(price=9.75, qty=5, tax=0.01, discount=0.5)
+#if you use keywords arguments, you can switch the values around and they go to the proper parameters. 
+get_total(tax=0.01, price=9.75, discount=0.5, qty=5,)
+# The way our function is written, price is required but everything else has default parameters so I can just enter a value for price
+get_total(8.99)
+# And the whole function will run through calling those default parameters. 
+# Say you want a different value than the default parameter for one parameter.
+get_total(8.99, 2.30)
+#This would likely apply the 2.30 to quantity, but say you want it to be the tax
+get_total(8.99, tax=2.30)
+#You can specify the which parameter you want to replace. 
