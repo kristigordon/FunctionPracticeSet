@@ -1,3 +1,4 @@
+```
 def even_calc(number):
     if number % 2 == 0:
         return True
@@ -64,3 +65,4 @@ get_total(8.99, 2.30)
 #This would likely apply the 2.30 to quantity, but say you want it to be the tax
 get_total(8.99, tax=2.30)
 #You can specify the which parameter you want to replace. 
+```
