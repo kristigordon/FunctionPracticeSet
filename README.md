@@ -1,3 +1,5 @@
+This is a repo for learning fucntions through Colt Steele's Python course. These are the programs I ran which primarily focused on iteration. 
+
 ```
 def even_calc(number):
     if number % 2 == 0:
